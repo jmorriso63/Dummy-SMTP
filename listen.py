@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 # Original script written by Stuart Colville: http://muffinresearch.co.uk/archives/2010/10/15/fake-smtp-server-with-python/
 """A noddy fake smtp server."""
 
@@ -10,7 +10,7 @@ class FakeSMTPServer(smtpd.SMTPServer):
     """A Fake smtp server"""
 
     def __init__(*args, **kwargs):
-        print "Running fake smtp server on port 25"
+        print ("Running fake smtp server on port 25")
         smtpd.SMTPServer.__init__(*args, **kwargs)
 
     def process_message(*args, **kwargs):
